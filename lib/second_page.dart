@@ -73,7 +73,7 @@ class SecondPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(onPressed: (){
-                  if(isUpdate=false){
+                  if(isUpdate!=false){
                    context.read<NoteCubitProvider>().addDatabloc(
                             newmodal: BlocModal(
                                 title: titlecontroller.text.toString(),
